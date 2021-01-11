@@ -63,5 +63,47 @@ function displaybook() {
     });
 }
 
+function clearfield() {
+    bookName.value = '';
+    bookAuthor.value = '';
+    numPages.value = '';
+  }
+  
+  window.addEventListener('DOMContentLoaded', displaybook);
+  
+  btnclose.addEventListener('click', () => {
+    formCtrl.classList.remove('show');
+    maincont.classList.remove('hide');
+  });
+  
+  submit.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (bookName.value === '' || bookAuthor.value === '' || numPages.value === '') {
+      errormsg.classList.add('show');
+      setTimeout(() => {
+        errormsg.classList.remove('show');
+      }, 2000);
+    } else {
+      addBooktolibrary();
+      clearfield();
+      displaybook();
+      formCtrl.classList.remove('show');
+      maincont.classList.remove('hide');
+      successmsg.classList.add('show');
+      setTimeout(() => {
+        successmsg.classList.remove('show');
+      }, 2000);
+    }
+  });
+  
+  bookcontainer.addEventListener('click', changestatus);
+  
+  
+  
+  function removeBook(index) {
+    myBooks.splice(index, 1);
+    displaybook();
+  }
+ 
 
 
