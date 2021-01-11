@@ -24,3 +24,17 @@ function Book(name, author, pages, status) {
     this.status = status;
 }
 
+addBook.addEventListener('click', () => {
+    formCtrl.classList.add('show');
+    maincont.classList.add('hide');
+});​
+function addBooktolibrary() {
+    const name = bookName.value;
+    const author = bookAuthor.value;
+    const pages = numPages.value;
+    const status = readStatus.value;
+    const book = new Book(name, author, pages, status);
+    myBooks.push(book);
+}
+
+
