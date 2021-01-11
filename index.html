@@ -14,13 +14,33 @@
 </head>
 <body>
     
-  <div class="container">
-      <div class="row">
-          <div class="col-4">hello</div>
-          <div class="col-4">hello</div>
-          <div class="col-4"><i class="fab fa-500px"></i></div>
-      </div>
-  </div>
+  <div class="form-ctrl">
+    <p class="px-2 py-2 text-white w-50 text-center" id="error">Please enter all the fields</p>
+    <form class="container w-50 bg-info p-2 text-white position-relative">
+        <i class="fas fa-window-close text-danger position-absolute close"></i>
+        <div class="form-group">
+            <label for="bookName">Book Name</label>
+            <input type="text" class="form-control" id="bookName" placeholder="Enter Book Name">
+        </div>
+        <div class="form-group">
+            <label for="bookAuthor">Book Author</label>
+            <input type="text" class="form-control" id="bookAuthor" placeholder="Enter Author Name">
+        </div>
+        <div class="form-group">
+            <label for="pages">Number of Pages</label>
+            <input type="number" class="form-control" id="pages" placeholder="Enter Number of Pages">
+        </div>
+        <div class="form-group">
+          <label for="books">Choose status:</label>
+
+                  <select name="status" id="status" class="custom-select">
+                          <option value="Finished">Finished</option>
+                          <option value="Yet to read">Yet to read</option>
+                  </select>
+        </div>
+        <button type="submit" class="btn btn-warning w-100 submit-btn">Submit</button>
+      </form>
+   </div>
 
 
 
