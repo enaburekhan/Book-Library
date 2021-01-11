@@ -2,3 +2,66 @@ body {
     font-family: 'Roboto', sans-serif; 
     background-color: #C7EAE4;   
   }
+
+  .form-ctrl {
+    position: absolute;
+    background-color: rgba(1, 160, 188, 0.38);
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    margin: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  
+  .btncont {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .maincont {
+    display: block;
+  }
+  
+  .maincont.hide {
+    display: none;
+  }
+  
+  .form-ctrl.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .close {
+    right: 5px;
+    top: 5px;
+  }
+  
+  .bookcont {
+    width: 90%;
+    margin: auto;
+    max-height: 70vh;
+    overflow: auto;
+  }
+  
+  #error {
+    display: none;
+    background-color: #ed6868;
+  }
+  
+  #error.show {
+    display: block;
+  }
+  
+  #success {
+    display: none;
+    background-color: #3db841;
+  }
+  
+  #success.show {
+    display: block;
+  }
+    
