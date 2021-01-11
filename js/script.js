@@ -27,24 +27,24 @@ addBook.addEventListener('click', () => {
   maincont.classList.add('hide');
 });
 
-function addBooktolibrary() {
+const addBooktolibrary = () => {
   const name = bookName.value;
   const author = bookAuthor.value;
   const pages = numPages.value;
   const status = readStatus.value;
   const book = new Book(name, author, pages, status);
   myBooks.push(book);
-}
+};
 
-function changestatus(e) {
+const changestatus = (e) => {
   if (e.target.classList.contains('status')) {
-    if (!e.target.textContent === 'Finished') {
+    if (e.target.textContent === 'Finished') {
       e.target.textContent = 'Yet to read';
     } else { e.target.textContent = 'Finished'; }
   }
-}
+};
 
-function displaybook() {
+const displaybook = () => {
   bookcontainer.innerHTML = '';
 
   myBooks.forEach((item, index) => {
@@ -59,13 +59,13 @@ function displaybook() {
   </div>`;
     bookcontainer.appendChild(card);
   });
-}
+};
 
-function clearfield() {
+const clearfield = () => {
   bookName.value = '';
   bookAuthor.value = '';
   numPages.value = '';
-}
+};
 
 window.addEventListener('DOMContentLoaded', displaybook);
 
@@ -98,9 +98,9 @@ bookcontainer.addEventListener('click', changestatus);
 
 /* eslint-disable no-unused-vars */
 
-function removeBook(index) {
+const removeBook = (index) => {
   myBooks.splice(index, 1);
   displaybook();
-}
+};
 
 /* eslint-enable no-unused-vars */
