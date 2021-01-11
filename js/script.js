@@ -47,5 +47,21 @@ function changestatus(e) {
     }
 }
 
+function displaybook() {
+    bookcontainer.innerHTML = '';​
+    myBooks.forEach((item, index) => {
+        const card = document.createElement('div');
+        card.className = 'col-6';
+        card.innerHTML = `<div class="card text-dark bg-white mb-3" >
+  <li class="list-group-item d-flex justify-content-between"><p class="bg-dark px-2 py-1 text-white">${index + 1}</p><a href="#" class="delete text-danger" onclick="removeBook(${index})" >X</a></li>
+  <li class="list-group-item "> Book Name: ${item.name}</li>
+  <li class="list-group-item ">Author Name: ${item.author}</li>
+  <li class="list-group-item ">Number of pages: ${item.pages}</li>
+  <li class="list-group-item "><a href="#" class="btn-warning px-2 py-1 rounded status">${item.status}</a></li>
+  </div>`;
+        bookcontainer.appendChild(card);
+    });
+}
+
 
 
