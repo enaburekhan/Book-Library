@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Library</title>
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/688a35b1eb.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Library</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/688a35b1eb.js" crossorigin="anonymous"></script>
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <!-- main css -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
   <div class="form-ctrl">
     <p class="px-2 py-2 text-white w-50 text-center" id="error">Please enter all the fields</p>
     <form class="container w-50 bg-info p-2 text-white position-relative">
@@ -32,41 +32,39 @@
         </div>
         <div class="form-group">
           <label for="books">Choose status:</label>
-
+  
                   <select name="status" id="status" class="custom-select">
                           <option value="Finished">Finished</option>
                           <option value="Yet to read">Yet to read</option>
                   </select>
         </div>
         <button type="submit" class="btn btn-warning w-100 submit-btn">Submit</button>
-      </form>
-   </div>
-   
-   <p class="px-2 py-2 text-white w-50 text-center mx-auto mt-2" id="success">Book added to library</p>
+    </form>
+ </div>
 
-   <div class="maincont bg-info  w-50 mx-auto mt-3 position-relative py-2 rounded">
-   
-     <div class="container btncont">
-         <div class="icon d-flex text-white align-items-center">
-             <i class="fas fa-book fa-2x mr-2"></i>
-             <h5>Book Library</h5>
-         </div>
-         <button class="addbook btn-danger">+Add Book</button>
-     </div>
-     <hr>
-     <div class="bookcont bg-info position-relative py-2 rounded row">
-     </div>
-   
-   </div>    
+<p class="px-2 py-2 text-white w-50 text-center mx-auto mt-2" id="success">Book added to library</p>
 
+<div class="maincont bg-info  w-50 mx-auto mt-3 position-relative py-2 rounded">
 
+  <div class="container btncont">
+      <div class="icon d-flex text-white align-items-center">
+          <i class="fas fa-book fa-2x mr-2"></i>
+          <h5>Book Library</h5>
+      </div>
+      <button class="addbook btn-danger">+Add Book</button>
+  </div>
+  <hr>
+  <div class="bookcont bg-info position-relative py-2 rounded row">
+  </div>
 
-
+</div>    
+  
+  
   <!-- jquery -->
-  <script src="js/jquery-3.5.1.min (1).js"></script>
-  <!-- bootstrap js -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <!-- bootstrap -->
   <script src="js/bootstrap.min.js"></script>
-  <!-- main js -->
+  <!-- main.js -->
   <script src="js/script.js"></script>
 </body>
 </html>
