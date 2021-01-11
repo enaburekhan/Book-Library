@@ -102,4 +102,5 @@ function removeBook(index) {
   myBooks.splice(index, 1);
   displaybook();
 }
+
 /* eslint-enable no-unused-vars */
