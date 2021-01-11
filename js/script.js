@@ -37,4 +37,15 @@ function addBooktolibrary() {
     myBooks.push(book);
 }
 
+function changestatus(e) {
+    if (e.target.classList.contains('status')) {
+        if (!e.target.textContent === 'Finished') {
+            e.target.textContent = 'Yet to read';
+        } else {
+            e.target.textContent = 'Finished';
+        }
+    }
+}
+
+
 
