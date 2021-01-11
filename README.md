@@ -8,7 +8,7 @@ The follwing things have been practiced here:
 ## Live Demo:
 [My Library]()
 
-## Screen-shots:
+## Screenshot
 <img src="img/screenshot.png">
 
 ## Built-With
@@ -16,7 +16,8 @@ The follwing things have been practiced here:
 - HTML5
 - CSS3
 - JavaScript
-- VScode
+- Jquery
+- Bootstrap
 
 ## Getting Started
 
